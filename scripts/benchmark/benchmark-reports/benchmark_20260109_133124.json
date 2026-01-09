@@ -1,0 +1,76 @@
+﻿{
+    "Version":  "1.0.0",
+    "Disk":  {
+                 "SeqReadMBs":  943.6,
+                 "TestDrive":  "C:",
+                 "RandomReadIOPS":  1281,
+                 "SeqWriteMBs":  645.1,
+                 "RandomWriteIOPS":  1695,
+                 "TestSizeMB":  128
+             },
+    "Timestamp":  "2026-01-09 13:30:43",
+    "System":  {
+                   "Timestamp":  "2026-01-09 13:30:47",
+                   "CPU":  {
+                               "Name":  "Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz",
+                               "Cores":  8,
+                               "LogicalProcessors":  16,
+                               "MaxClockSpeedMHz":  2904,
+                               "L2CacheKB":  2048,
+                               "L3CacheKB":  16384
+                           },
+                   "RAM":  {
+                               "TotalGB":  32,
+                               "SpeedMHz":  2133,
+                               "Modules":  2
+                           },
+                   "GPU":  {
+                               "Name":  "NVIDIA GeForce RTX 3060 Ti",
+                               "VramMB":  8192,
+                               "DriverVersion":  "577.00",
+                               "PowerLimitW":  240.00
+                           },
+                   "Storage":  [
+                                   {
+                                       "Model":  "Samsung Portable SSD T5 SCSI Disk Device",
+                                       "SizeGB":  1863.01,
+                                       "MediaType":  "SSD"
+                                   },
+                                   {
+                                       "Model":  "WDC WDS100T2B0C-00PXH0",
+                                       "SizeGB":  931.51,
+                                       "MediaType":  "HDD"
+                                   },
+                                   {
+                                       "Model":  "Samsung SSD 990 EVO 2TB",
+                                       "SizeGB":  1863.01,
+                                       "MediaType":  "SSD"
+                                   }
+                               ],
+                   "OS":  {
+                              "Name":  "Microsoft Windows 10 Pro",
+                              "Version":  "10.0.19045",
+                              "Build":  "19045"
+                          }
+               },
+    "GPU":  {
+                "MaxCoreClockMHz":  2145,
+                "MaxMemClockMHz":  7001,
+                "MemClockMHz":  7001,
+                "PCIeGen":  "3",
+                "BaseClockMHz":  255,
+                "PCIeWidth":  "x16",
+                "IdleMemUsedMB":  1496,
+                "IdleTemp":  54,
+                "MemTotalMB":  8192,
+                "IdlePowerW":  205,
+                "MaxPowerW":  260.00
+            },
+    "CPU":  {
+                "MemoryBandwidthGBs":  0.42,
+                "SingleThreadScore":  218,
+                "ScalingEfficiency":  4.1,
+                "ThreadCount":  16,
+                "MultiThreadScore":  143
+            }
+}
