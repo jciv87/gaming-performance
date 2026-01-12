@@ -1,0 +1,116 @@
+================================================================================
+                    MSI AFTERBURNER PROFILE SETUP GUIDE
+                         RTX 3060 Ti Configuration
+================================================================================
+
+STEP 1: OPEN MSI AFTERBURNER
+----------------------------
+Run: C:\Program Files (x86)\MSI Afterburner\MSIAfterburner.exe
+
+STEP 2: INITIAL SETTINGS
+------------------------
+- Click the gear icon (Settings)
+- General tab: Check "Start with Windows" if desired
+- General tab: Check "Start minimized"
+- User Interface tab: Choose your preferred skin
+- Click OK
+
+================================================================================
+                           PROFILE 1: PERFORMANCE
+================================================================================
+Use for: Daily gaming, maximum FPS
+
+SETTINGS:
+  Core Clock (MHz):     +120
+  Memory Clock (MHz):   +600
+  Power Limit (%):      115 (drag slider right)
+  Temp Limit (C):       83
+  Voltage:              Stock (leave at 0)
+
+HOW TO SAVE:
+1. Adjust the sliders to above values
+2. Click the "Apply" checkmark button
+3. Click the SAVE icon (floppy disk)
+4. Click Profile slot 1
+
+================================================================================
+                           PROFILE 2: EFFICIENT
+================================================================================
+Use for: Streaming via Parsec, quiet operation, hot days
+
+SETTINGS:
+  Core Clock (MHz):     +50
+  Memory Clock (MHz):   +500
+  Power Limit (%):      90 (drag slider LEFT)
+  Temp Limit (C):       75
+  Voltage:              Stock (leave at 0)
+
+HOW TO SAVE:
+1. Adjust the sliders to above values
+2. Click the "Apply" checkmark button
+3. Click the SAVE icon (floppy disk)
+4. Click Profile slot 2
+
+================================================================================
+                           PROFILE 3: STOCK
+================================================================================
+Use for: Troubleshooting, resetting to defaults
+
+SETTINGS:
+  Core Clock (MHz):     0
+  Memory Clock (MHz):   0
+  Power Limit (%):      100
+  Temp Limit (C):       83
+  Voltage:              0
+
+HOW TO SAVE:
+1. Click the "Reset" button (circular arrow) to reset all sliders
+2. Click the "Apply" checkmark button
+3. Click the SAVE icon (floppy disk)
+4. Click Profile slot 3
+
+================================================================================
+                           USING THE PROFILES
+================================================================================
+
+OPTION A: Double-click batch files
+  - Performance-Mode.bat  -> Activates Profile 1
+  - Efficient-Mode.bat    -> Activates Profile 2
+  - Stock-Mode.bat        -> Activates Profile 3
+
+OPTION B: PowerShell command
+  .\Switch-GpuProfile.ps1 -Profile performance
+  .\Switch-GpuProfile.ps1 -Profile efficient
+  .\Switch-GpuProfile.ps1 -Profile stock
+
+OPTION C: Direct command (from anywhere)
+  "%ProgramFiles(x86)%\MSI Afterburner\MSIAfterburner.exe" -Profile1
+
+================================================================================
+                           ADVANCED: UNDERVOLT PROFILE
+================================================================================
+If you want to create an undervolt profile instead of the Efficient profile:
+
+1. In Afterburner, press Ctrl+F to open the V/F Curve editor
+2. Find 900mV on the horizontal axis (voltage)
+3. Click on that point and drag it up to ~1900 MHz
+4. Press Ctrl+L to lock the curve at that point
+5. Click Apply, then Save to Profile 2
+
+This gives better efficiency than just lowering power limit.
+
+================================================================================
+                              TESTING STABILITY
+================================================================================
+
+After setting up profiles:
+
+1. Apply Performance profile
+2. Run: 3DMark Time Spy OR Unigine Superposition
+3. Watch for crashes or visual artifacts
+4. If unstable: reduce Core Clock by 15MHz, try again
+5. If stable: optionally increase Memory Clock by 100MHz
+
+Target: 97%+ stability score in 3DMark Stress Test
+
+================================================================================
